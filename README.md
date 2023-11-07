@@ -1,5 +1,4 @@
-# Types-of-encryption
-Семинарная работа по шифрованию алгоритмами: 
+Types of encryption
 *XOR 
 *RSA 
 *Шифр Цезаря 
