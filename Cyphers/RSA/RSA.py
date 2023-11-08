@@ -75,7 +75,10 @@ public_key, private_key = generate_keypair(p, q)
 message = "Hello, World!"
 encrypted_message = encrypt(public_key, message)
 decrypted_message = decrypt(private_key, encrypted_message)
+#Ниже формируется строка с зашифрованным сообщением в виде символов
+encrypted_text_message= ''.join(chr(char)for char in encrypted_message)
 
 print("Original message:", message)
 print("Encrypted message:", encrypted_message)
+print("Encrypted message in text:", encrypted_text_message)
 print("Decrypted message:", decrypted_message)
