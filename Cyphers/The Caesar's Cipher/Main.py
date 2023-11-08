@@ -7,6 +7,9 @@ def change(bt): #Раскрашивание кнопки при нажатии
     bt['activebackground'] = '#555555'
     bt['activeforeground'] = '#DCDCDC'
 
+def show_message_encrypt(event):
+    s = ent1.get()
+
 #----------------------------------------------------------#
 root = Tk()
 
@@ -31,38 +34,47 @@ root.resizable(False, False)
 
 #h1 - label 
 lent = Label().pack()
-l1 = ttk.Label(text="The Caesar`s Cipher",font = "Arial 24", justify='center').pack()
+l1 = ttk.Label(text="The Caesar`s Cipher",font = "Arial 24", justify='center')
+l1.pack()
 
 #Encrypt
 lent = Label().pack()
-l2 = ttk.Label(text="Enter the message you want to encrypt :").pack()
-ent1 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+l2 = ttk.Label(text="Enter the message you want to encrypt :")
+l2.pack()
+ent1 = Entry(font= "Arial 16" , justify='center', width = '30')
+ent1.pack()
 lent = Label().pack()
-l3 = ttk.Label(text="Enter the shift :").pack()
-ent2 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+l3 = ttk.Label(text="Enter the shift :")
+l3.pack()
+ent2 = ttk.Entry(font= "Arial 16" , justify='center', width = '30')
+ent2.pack()
 lent = Label().pack() 
 btn1 = Button(text="Encrypt", font="Arial 16" ,width=30, height=2)
 btn1.config(command=change(bt=btn1))
-#btn1.config(command=)
 btn1.pack()
 
 #Decrypt
 lent = Label().pack()
-l4 = ttk.Label(text="Enter the message you want to decrypt :").pack()
-ent3 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+l4 = ttk.Label(text="Enter the message you want to decrypt :")
+l4.pack()
+ent3 = ttk.Entry(font= "Arial 16" , justify='center', width = '30')
+ent3.pack()
 lent = Label().pack()
-l5 = ttk.Label(text="Enter the shift :").pack()
-ent4 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+l5 = ttk.Label(text="Enter the shift :")
+l5.pack()
+ent4 = ttk.Entry(font= "Arial 16" , justify='center', width = '30')
+ent4.pack()
 lent = Label().pack() 
 btn2 = Button(text="Decrypt", font="Arial 16" ,width=30, height=2)
 btn2.config(command=change(bt=btn2))
-#btn2.config(command=)
 btn2.pack()
 
 #Output
 lent = Label().pack()
-result = ttk.Label(text="Result :", font='Arial 20').pack()
-out_result = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+result = ttk.Label(text="Result :", font='Arial 20')
+result.pack()
+out_result = ttk.Entry(font= "Arial 16" , justify='center', width = '30')
+out_result.pack()
 
 root.mainloop()
 
