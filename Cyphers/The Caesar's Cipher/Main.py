@@ -2,13 +2,30 @@ from tkinter import *
 from tkinter import ttk
 from Caesar import caesar_cipher, caesar_decipher
 
+
+
 def change(bt): #Раскрашивание кнопки при нажатии
     bt['fg'] = '#000000'
     bt['activebackground'] = '#555555'
     bt['activeforeground'] = '#DCDCDC'
 
-def show_message_encrypt(event):
-    s = ent1.get()
+def show_message_encrypt():
+    fun_mess = ent1.get()
+    fun_shift = ent2.get()
+    result = caesar_cipher(fun_mess,int(fun_shift))
+    out_result.delete(0, END)
+    out_result.insert(0, result)
+
+def show_message_decrypt():
+    fun_mess = ent3.get()
+    fun_shift = ent4.get()
+    result = caesar_decipher(fun_mess,int(fun_shift))
+    out_result.delete(0, END)
+    out_result.insert(0, result)
+    
+    
+
+    
 
 #----------------------------------------------------------#
 root = Tk()
@@ -73,8 +90,13 @@ btn2.pack()
 lent = Label().pack()
 result = ttk.Label(text="Result :", font='Arial 20')
 result.pack()
-out_result = ttk.Entry(font= "Arial 16" , justify='center', width = '30')
+out_result = ttk.Entry( font= "Arial 16" , justify='center', width = '30' )
 out_result.pack()
+
+#Event
+btn1.config(command=show_message_encrypt)
+btn2.config(command=show_message_decrypt)
+
 
 root.mainloop()
 
