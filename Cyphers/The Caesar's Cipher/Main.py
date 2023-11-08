@@ -21,7 +21,12 @@ h = h - 200
 
 root.geometry(f'400x200+{w}+{h}')
 root.resizable(False, False)
+
 #----------------------------------------------------------#
+
+l1 = ttk.Label(text="The Caesar`s Cipher", font = "Arial 24", justify='center').pack()
+
+ent1 = ttk.Entry(justify='center', width = '60').pack()
 
 
 root.mainloop()
