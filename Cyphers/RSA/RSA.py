@@ -55,6 +55,8 @@ def generate_keypair(p, q):
 
     d = multiplicative_inverse(e, phi)
 
+    print ("Public key is:", e)
+    print ("Private key is:", d)
     return ((e, n), (d, n))
 
 def encrypt(pk, plaintext):
