@@ -24,9 +24,12 @@ root.resizable(False, False)
 
 #----------------------------------------------------------#
 
-l1 = ttk.Label(text="The Caesar`s Cipher", font = "Arial 24", justify='center').pack()
-
-ent1 = ttk.Entry(justify='center', width = '60').pack()
-
+l1 = ttk.Label(text="The Caesar`s Cipher",font = "Arial 24", justify='center').pack()
+lent = Label().pack()
+l2 = ttk.Label(text="Enter the message you want to encrypt:").pack()
+ent1 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
+lent = Label().pack()
+l3 = ttk.Label(text="Enter the shift:").pack()
+ent2 = ttk.Entry(font= "Arial 16" , justify='center', width = '30').pack()
 
 root.mainloop()
