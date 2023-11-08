@@ -5,10 +5,10 @@ def XOR(Num, Key):
     dec_result = str(bin_result)
     dec_result = int(dec_result,2)
     print(dec_result)
+ 
+
+
     
-   
-
-
 num = int(input())
 key = int(input())
 
