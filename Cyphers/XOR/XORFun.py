@@ -5,7 +5,7 @@ def Dec_to_Bin(Digit):
 
 def Bin_to_Dec(Bin_digit):
     Bin_digit = str(Bin_digit)
-    Bin_digit = int(Bin_digit)
+    Bin_digit = int(Bin_digit,2)
     return Bin_digit
 
 def XOR_Fun(Num, Key):
