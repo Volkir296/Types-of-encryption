@@ -1,12 +1,4 @@
-#Работает с текстом 
-#проблема в кодировке но работает (вывод невидимых символов)
-
-def xor_encrypt_decrypt(message, key):
-    encrypted = ""
-    for i in range(len(message)):
-        # Применяем операцию XOR между символом сообщения и соответствующим символом ключа
-        encrypted += chr(ord(message[i]) ^ ord(key[i % len(key)]))
-    return encrypted
+from XORFun import xor_encrypt_decrypt
 
 # Пример использования
 message = "Hello, world!"
