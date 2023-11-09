@@ -1,3 +1,6 @@
+#Работает с текстом 
+#проблема в кодировке но работает (вывод невидимых символов)
+
 def xor_encrypt_decrypt(message, key):
     encrypted = ""
     for i in range(len(message)):

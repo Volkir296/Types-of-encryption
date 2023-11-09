@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from Caesar import caesar_cipher, caesar_decipher
+from CaesarFun import caesar_cipher, caesar_decipher
 
 
 
