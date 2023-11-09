@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from XORFun import Dec_to_Bin, Bin_to_Dec, XOR_Fun
 
 #root window
 root = Tk()
@@ -49,7 +50,7 @@ key_bin_lab = ttk.Label(root, text="NONE")
 key_bin_lab.grid(column = 2, row = 2, sticky = 'E',padx = 5, pady = 5)
 
 #button
-btn1 = ttk.Button(root, text="RUN")
+btn1 = ttk.Button(root,text="RUN")
 btn1.grid(column = 1,row = 3, sticky = 'WE', padx = 5, pady = 5)
 
 #result
@@ -63,6 +64,5 @@ result_bin_lab = ttk.Label(root, text="NONE")
 result_bin_lab.grid(column=2, row= 4, sticky = 'E',padx = 5, pady = 5)
 
 #event
-
 
 root.mainloop()
