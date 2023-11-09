@@ -1,4 +1,4 @@
-def vigenere_cipher(text, key, mode='encrypt'):
+def vigenere_cipher(text, key, mode = 'encrypt'):
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     text = text.upper()
     key = key.upper()
