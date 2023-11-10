@@ -24,6 +24,7 @@ __Python 3.12.0__
 ### Если не запускается 
 _1 шаг:_ 
 * pip install tkinter
+
 _2 шаг:_
 * pip install --update tkinter
 ***
