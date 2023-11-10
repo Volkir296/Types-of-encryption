@@ -5,6 +5,10 @@ def encrypt(pk, plaintext):
     return cipher
 
 def decrypt(pk, ciphertext):
-    key, n = pk
-    plain = [chr(pow(char, key, n)) for char in ciphertext]
+    t = tuple(int(item) for item in pk.split(' '))
+    key, n = t
+
+    k = list(int(item) for item in ciphertext.split(' '))
+
+    plain = [chr(pow(char, key, n)) for char in k]
     return ''.join(plain)
