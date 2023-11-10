@@ -20,3 +20,4 @@ __Python 3.12.0__
 * __The Caesar's Cipher__ -> Cyphers/The Caesar's Cipher/Caesar_Console.py
 * __The Vigener Cipher__ -> Cyphers/The Vigener Cipher/Vigener_Console.py
 * __XOR__ -> Cyphers/XOR/XOR_Console.py
+***
