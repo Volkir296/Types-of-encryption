@@ -21,3 +21,9 @@ __Python 3.12.0__
 * __The Vigener Cipher__ -> Cyphers/The Vigener Cipher/Vigener_Console.py
 * __XOR__ -> Cyphers/XOR/XOR_Console.py
 ***
+### Если не запускается 
+_1 шаг:_ 
+* pip install tkinter
+_2 шаг:_
+* pip install --update tkinter
+***
