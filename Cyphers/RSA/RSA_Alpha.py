@@ -67,8 +67,8 @@ def decrypt(pk, ciphertext):
     plain = [chr(pow(char, key, n)) for char in ciphertext]
     return ''.join(plain)
 
-p = 61
-q = 53
+p = 97
+q = 73
 
 public_key, private_key = generate_keypair(p, q)
 
