@@ -1,17 +1,19 @@
 from tkinter import *
 from tkinter import ttk
-from XORFun import Dec_to_Bin, Bin_to_Dec, XOR_Fun
+from XORFun import Dec_to_Bin, XOR_Fun
 
 def XOR_click_event(): #Ивент для btn1
     fun_digit = Dec_to_Bin(int(digit_entry.get()))
     fun_key = Dec_to_Bin(int(key_entry.get()))
     digit_bin_lab["text"] = fun_digit
     key_bin_lab["text"] = fun_key
-    fun_result = XOR_Fun(fun_digit,fun_key)
-    result_bin_lab["text"]  = fun_result
-    fun_result = Bin_to_Dec(fun_result)
+    fun_digit_int = int(digit_entry.get())
+    fun_key_int = int(key_entry.get())
+    fun_result = XOR_Fun(fun_digit_int,fun_key_int)
     result_out.delete(0, END)
     result_out.insert(0, fun_result)
+    fun_result = Dec_to_Bin(fun_result)
+    result_bin_lab["text"]  = fun_result
     
 #root window
 root = Tk()
@@ -25,13 +27,13 @@ h = h // 2 # Y
 # Смещение от середины
 w = w - 200 
 h = h - 300
-root.geometry(f'300x180+{w}+{h}')
-root.resizable(False, False)
+root.geometry(f'300x200+{w}+{h}')
+root.resizable(True, False)
 
 #настройка сетки
 root.columnconfigure(0, weight= 1)
 root.columnconfigure(1, weight= 2)
-root.columnconfigure(2, weight= 3)
+root.columnconfigure(2, weight= 6)
 
 # Designations
 dec_lab = ttk.Label(root, text="DEC")
