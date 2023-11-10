@@ -9,7 +9,7 @@
 ### ___Требования для запуска___
 __Python 3.12.0__
 ***
-### ___GUI (Графическое предстваление)___ -> (Путь до исполняемого файла)
+### ___GUI (Графическое представление)___ -> (Путь до исполняемого файла)
 * __RSA__ -> Cyphers/RSA/MainRSA.py
 * __The Caesar's Cipher__ -> Cyphers/The Caesar's Cipher/MainCaesar.py
 * __The Vigener Cipher__ -> Cyphers/The Vigener Cipher/MainVigener.py
